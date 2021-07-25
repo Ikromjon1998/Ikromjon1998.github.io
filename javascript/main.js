@@ -38,6 +38,8 @@ SoundCloudAPI.renderTracks = function(){
   image.classList.add('image');
   var content = document.createElement('div');
   content.classList.add('content');
+  var header = document.createElement('div');
+  header.classList.add('header');
   var ui_button = document.createElement('div');
   ui_button.classList.add('ui', 'bottom', 'attached', 'button', 'js-button');
   var add_icon = document.createElement('div');
@@ -46,6 +48,8 @@ SoundCloudAPI.renderTracks = function(){
   card.appendChild(image);
   card.appendChild(content);
   card.appendChild(ui_button);
+  content.appendChild(header);
+  ui_button.appendChild(add_icon);
 
 
 }
